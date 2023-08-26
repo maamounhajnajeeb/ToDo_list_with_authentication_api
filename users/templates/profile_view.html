@@ -1,0 +1,8 @@
+{% load static %}
+
+<p>{{request.user.id}}</p>
+<p>{{request.user.username}}</p>
+<p>{{request.user.email}}</p>
+<p>{{request.user.phone_number}}</p>
+
+<script src="{% static "js/users/index.js" %}"></script>

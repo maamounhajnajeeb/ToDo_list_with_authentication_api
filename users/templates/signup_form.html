@@ -1,0 +1,8 @@
+<form method="POST" action="../api/v1/users/signup/">
+    {% csrf_token %}
+    <input type="text" name="username" value="username" placeholder="username" />
+    <input type="email" name="email" value="email" placeholder="email" />
+    <input type="password" name="password" value="password" placeholder="password" />
+    <input type="digit" name="phone_number" value="phone_number" placeholder="phone number" />
+    <input type="submit" value="sign up" />
+</form>

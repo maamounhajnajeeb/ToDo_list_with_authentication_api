@@ -1,0 +1,10 @@
+{% load static %}
+
+{% comment %} <script src="{% static 'js/users/login.js' %}"></script> {% endcomment %}
+
+<form method="POST" action="../api/v1/users/login/">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="username" value="username" />
+    <input type="password" name="password" placeholder="password" value="username" />
+    <input type="submit" value="login" />
+</form>
